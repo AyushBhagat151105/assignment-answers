@@ -14,7 +14,7 @@
         .middle{
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 42%;
             transform: translate(-50%,-50%);
             text-align: center;
         }
@@ -63,6 +63,24 @@
         }
         .btn2:hover::before{
             transform: scaleY(1);
+        }
+        @keyframes slid{
+            from{
+                transform: translateX(-500px);
+            }
+
+            to{
+                transform: translateX(0px);
+            }
+        }
+        .middle{
+            animation-name: slid;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
         }
     </style>
 </head>
