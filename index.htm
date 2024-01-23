@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Answe and material from Ayush Bhagat</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style type="text/css">
         body{
             font-family: border-box;
             margin: 0%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .manu_bar{
             background-color: rgb(26, 24, 51);
@@ -27,53 +30,8 @@
         .logo span{
             color: brown;
         }
-        .manu_bar ul{
-            list-style: none;
-            display: flex;
-            font-size: smaller;
-            
-            margin: 0;
-        }
+       
         
-        .manu_bar ul li ul li a :hover{
-            color: white;
-            opacity: 100%;
-        }
-        .drop_down{
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 100%;
-            /* opacity: 0%; */
-            background-color: rgb(26, 24, 51);
-            
-        }
-        /* .drop_down:hover{
-            opacity: 100%;
-        }
-        .manu_bar ul li ul:hover{
-            opacity: 100%;
-        } */
-        .manu_bar ul li:hover{
-            padding: 10px 30px;
-            color: white;
-            font-size: 15px;
-            text-decoration: none;
-            position: relative;
-            opacity: 100%;
-            transition: all 0.3s;
-            
-        }
-        .drop_down ul{
-            display: block;
-            margin: 0;
-            color: white;
-        }
-        .drop_down ul li{
-            width: 150px;
-            padding: 10px;
-            
-        }
         .color{
             color: brown;
             padding-right: 10%;   
@@ -84,30 +42,13 @@
         body{
             background-color: darkgray;
         }
-        p{
-            background-color: rgb(26, 24, 51);
-            width: 50%;
-            height: 5;
-            padding-left: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-right: 20px;
-            color: brown;
-        }
-        footer{
-            font-size: larger;
-        }
+        
+        
         .ayush{
             width: 100px;
             border-radius: 60%;
         }
-        footer{
-            background-color: rgb(26, 24, 51);
-            width: 550px;
-            color: brown;
-            height: 130px;
-            text-align: center;
-        }
+        
         a{
             color: brown;
             text-decoration: none;
@@ -151,45 +92,194 @@
         width: 100%;
     }
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: rgb(26, 24, 51);
+    margin-top: 100%;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.social a:hover{
+    background-color: rgb(26, 24, 51);
+    transition: 0.5s;
+}
+.social a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.footernev{
+    margin: 30px 0;
+}
+.footernev ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footernev ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footernev ul li a:hover{
+    opacity: 1;
+}
+.footerbottom{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: 1px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px 5px;
+}
+@media(max-width:800px){
+    .footernev{
+        flex-direction: column;
+    }
+    .footernev ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+
+    }
+    .middle{
+        left: 10%;
+    }
+}
+        .middle{
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .btn{
+            background: none;
+            border: 2px solid #000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            min-width: 200px;
+            margin: 10px;
+            cursor: pointer;
+            transition: color 0.4 linear;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: brown;
+        }
+
+        .btn:hover{
+            color: #fff;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: -1;
+            transition: transform 0.5s;
+            transform-origin: 0 0;
+            transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+        }
+        .btn1::before{
+            transform: scaleX(0);
+        }
+        .btn2::before{
+            transform: scaleY(0);
+        }
+        .btn1:hover::before{
+            transform: scaleX(1);
+        }
+        .btn2:hover::before{
+            transform: scaleY(1);
+        }
+        @keyframes slid{
+            from{
+                transform: translateX(-500px);
+            }
+
+            to{
+                transform: translateX(0px);
+            }
+        }
+        .middle{
+            animation-name: slid;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
     </style>
 </head>
 <body>
 <div class="manu_bar">
     <h1 class="logo">Assignment <span>Answe</span> and <span>material</span></h1>
-    <ul class="color">
-        <li><a href="ADVANCED C.htm">ADVANCED C PROGRAMMING  <i class="fas fa-caret-down"></i>
-        </a>
-        </li>
-        <li><a href="Wad 2.htm">WEB APPLICATION DEVELOPMENT II  <i class="fas fa-caret-down"></i>
-        </a>
-        </li>
-        <li><a href="DE.htm"> DIGITAL ELECTRONICS  <i class="fas fa-caret-down"></i>
-        </a>
-        </li>
-        <li>CS IN ENGLISH  II  <i class="fas fa-caret-down"></i>
-            
-        </li>
-        <li>INFORMATION TECHNOLOGY FUNDAMENTALS II  <i class="fas fa-caret-down"></i>
-            
-        </li>
-        <li><a href="evs.htm"> EVS  <i class="fas fa-caret-down"></i></a>
-        </li>
-    </ul>
 </div>
-<br><br><br>
-<h3>Introduction:</h3>
-<div align="center">
-<p>
-    In today's digital age, the availability of online resources has become indispensable for students seeking assistance with assignments and materials.
-This note explores a website designed to aid students in collecting answers for assignments and gathering relevant study materials.
+
+    <div class="middle">
+        <button class="btn btn1"><a href="ADVANCED C.htm">ADVANCED_C</a></button>
+        <button class="btn btn2"><a href="DE.htm">DE</a></button>
+        <button class="btn btn1"><a href="evs.htm">EVS</a></button>
+        <button class="btn btn2"><a href="Wad 2.htm">Wad</a></button>
+    </div>
+
 </p>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<div align="center">
-<footer align="center">
-    <br>
-    <img src="Ayush.png" class="ayush"> This website Develop by Ayush Bhagat<br>
+<footer>
+    <div class="footerContainer">
+        <div class="social">
+            <a href="https://www.instagram.com/ayush_bhagat_151105/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footernev">
+            <ul>
+                <li type="none"><a href="index.htm">Home</a></li>
+                <li type="none"><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerbottom">
+        <p>Copyright &copy;2024; Designed By <span class="designer">Ayush Bhagat</span></p>
+    </div>
 </footer>
-</div>
+
 </body>
 </html>
