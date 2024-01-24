@@ -132,9 +132,10 @@ margin: 10px;
 
 }
 .middle{
-left: 10%;
+left: 5%;
 margin-bottom: 50%;
 top: 10%;
+right: 80px;
 }
 .btn{
 margin-top: 15%;
@@ -176,11 +177,22 @@ width: 100%;
 .accordion li{
 max-width: 60%;
 }
+.center{
+    margin-top: 50px;
+    
+}
+th{
+    font-size: x-small;
+}
+td{
+    max-width: 60px;
+    font-size: xx-small;
+}
 }
 .middle{
     position: absolute;
     top: 44%;
-    left: 12%;
+    left: 10%;
     transform: translate(-50%,-50%);
     text-align: center;
     margin-top: 60px;
@@ -302,9 +314,9 @@ input[type="radio"]{
 }
 table
 {
-    border: 1px solid #151314;
+    border: none;
     text-align: center;
-    border-radius: 0px;
+    border-radius: 8px;
     background: rgb(26, 24, 51);
     box-shadow: 9px 9px 18px #1f1f1f,
                  -9px -9px 18px #474747;
@@ -313,10 +325,12 @@ table
 }
 th
 {
-	border:1px solid #151314;
+	border:1px solid;
 	color: red;
 	text-align: center;
-    padding: 8px;
+    padding-right: 8px;
+    width: 100px;
+    
 }
 th:hover
 {
