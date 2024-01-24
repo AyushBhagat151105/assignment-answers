@@ -178,11 +178,12 @@ width: 100%;
 max-width: 60%;
 }
 .center{
-    margin-top: 50px;
+    margin-top: 150px;
     
 }
 th{
     font-size: x-small;
+    border: none;
 }
 td{
     max-width: 60px;
@@ -325,7 +326,7 @@ table
 }
 th
 {
-	border:1px solid;
+	border:none;
 	color: red;
 	text-align: center;
     padding-right: 8px;
