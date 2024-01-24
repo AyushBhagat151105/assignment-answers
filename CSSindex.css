@@ -184,6 +184,7 @@ max-width: 60%;
 th{
     font-size: x-small;
     border: none;
+    margin-top: 50px;
 }
 td{
     max-width: 60px;
