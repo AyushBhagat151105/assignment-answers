@@ -300,3 +300,46 @@ input[type="radio"]{
     max-height: 400px;
     padding: 10px 10px 20px;
 }
+table
+{
+    border: 1px solid #151314;
+    text-align: center;
+    border-radius: 0px;
+    background: rgb(26, 24, 51);
+    box-shadow: 9px 9px 18px #1f1f1f,
+                 -9px -9px 18px #474747;
+                 padding: 8px;
+               
+}
+th
+{
+	border:1px solid #151314;
+	color: red;
+	text-align: center;
+    padding: 8px;
+}
+th:hover
+{
+	background: #ff0157;
+	color: #fff;
+	box-shadow: 9px 9px 18px #1f1f1f,
+                 -9px -9px 18px #474747;
+}
+td
+{
+	border:1px solid rgb(26, 24, 51);
+	color: white;
+	text-align: center;
+}
+td:hover
+{
+	background: black;
+	color: #fff;
+	box-shadow: 9px 9px 18px #1f1f1f,
+                 -9px -9px 18px #474747;
+}
+table.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
