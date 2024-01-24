@@ -57,42 +57,7 @@
         h3{
             color: brown;
         }
-        @media only screen and (max-width: 768px) {
-    .manu_bar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .manu_bar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .manu_bar ul li {
-        margin-bottom: 5px;
-    }
-
-    .drop_down {
-        position: static;
-        display: none;
-    }
-
-    .color {
-        padding-right: 0;
-    }
-
-    p {
-        width: 100%;
-    }
-
-    footer {
-        width: 100%;
-    }
-}
+        
 *{
     padding: 0;
     margin: 0;
@@ -177,14 +142,56 @@ footer{
     .middle{
         left: 10%;
         margin-bottom: 50%;
+        top: 10%;
+    }
+    .btn{
+        margin-top: 15%;
+    }
+    .manu_bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .manu_bar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .manu_bar ul li {
+        margin-bottom: 5px;
+    }
+
+    .drop_down {
+        position: static;
+        display: none;
+    }
+
+    .color {
+        padding-right: 0;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+    .accordion li{
+        max-width: 60%;
     }
 }
         .middle{
             position: absolute;
-            top: 30%;
-            left: 15%;
+            top: 44%;
+            left: 12%;
             transform: translate(-50%,-50%);
             text-align: center;
+            margin-top: 60px;
         }
         .btn{
             background: none;
@@ -205,6 +212,7 @@ footer{
 
         .btn:hover{
             color: #fff;
+            border-radius: 8px;
         }
         .btn::before{
             content: "";
@@ -239,6 +247,7 @@ footer{
             to{
                 transform: translateX(0px);
             }
+            
         }
         .middle{
             animation-name: slid;
@@ -249,21 +258,99 @@ footer{
             animation-direction: normal;
             animation-fill-mode: forwards;
         }
+        .notis{
+            display: flex;
+            flex-direction: column;
+        }
+        .notice{
+            margin-left: 20%;
+        }
+        .accordion{
+            margin: 60px auto;
+            width: 600px;
+        }
+        .accordion li{
+            list-style: none;
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            color: red;
+            background: rgb(26, 24, 51);
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),-6px -6px -10px -1px rgba(255, 255, 255, 0.7);
+        }
+        .accordion li label{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        label::before{
+            content: '+';
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        .accordion .notice{
+            color: white;
+            padding: 0 10px;
+            line-height: 26px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s,padding 0.5s;
+        }
+        .accordion input[type="radio"]:checked + label +.notice{
+            max-height: 400px;
+            padding: 10px 10px 20px;
+        }
     </style>
 </head>
 <body>
+    
 <div class="manu_bar">
     <h1 class="logo">Assignment <span>Answe</span> and <span>material</span></h1>
+    
 </div>
+
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">Notice</label>
+            <div class="notice">
+            <p>
+                No notice yet!
+            </p>
+            </div>
+            
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="secound">
+            <label for="secound">announcement</label>
+            <div class="notice">
+            <p>
+                No Announcement yet!
+            </p>
+            </div>
+            
+        </li>
+</ul>
+
     <div class="middle">
         <button class="btn btn1"><a href="ADVANCED C.htm">ADVANCED_C</a></button>
         <button class="btn btn2"><a href="DE.htm">DE</a></button>
         <button class="btn btn1"><a href="evs.htm">EVS</a></button>
         <button class="btn btn2"><a href="Wad 2.htm">Wad</a></button>
+        <button class="btn btn1"><a href="itf.htm">ITF</a></button>
     </div>
+</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </p>
-</div>
+
 <footer>
     <div class="footerContainer">
         <div class="social">
