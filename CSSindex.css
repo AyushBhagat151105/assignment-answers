@@ -338,4 +338,7 @@ table.center
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .td{
+        width: 100%;
+    }
 }
