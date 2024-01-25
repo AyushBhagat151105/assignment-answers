@@ -163,7 +163,7 @@ width: 100%;
     margin-left: 20px;
 }
 .accordion li{
-max-width: 36%;
+max-width: 35%;
 margin-right: 20px;
 }
 .center{
@@ -175,6 +175,7 @@ margin-right: 20px;
     border: none;
     margin-top: 0px;
     width: 20px;
+    
 }
 td{
     max-width: 35px;
@@ -185,10 +186,19 @@ td{
 .px{
     font-size: 9px;
     text-decoration: none;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 9px;
+    padding-right: 30px;
     margin-left: 2px;
     margin-right: 2px;
+}
+#br{
+    padding-left: 9px;
+}
+#notice{
+    margin: 0;
+}
+#center{
+    margin: 0;
 }
 .link{
     font-weight: 100;
