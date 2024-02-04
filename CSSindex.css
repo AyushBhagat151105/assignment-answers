@@ -202,6 +202,7 @@ td{
 }
 .link{
     font-weight: 100;
+    border-radius: 5px;
 }
 }
 .notis{
@@ -326,6 +327,7 @@ table.center
     letter-spacing: 0.25em;
     background: red;
     box-shadow: 0 0 35px red;
+    border-radius: 5px;
 }
 .link::before{
     content: '';
