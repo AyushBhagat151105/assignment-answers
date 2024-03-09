@@ -2,55 +2,135 @@
 <head>
     <title>Ass-7</title>
     <style type="text/css">
-        img{
-            width: 70;
-        }
-        h1{
-           margin: 0;
-           text-decoration: underline;
-        }
+      
+      #BB{
+        height: 60px;
+        width: 60px;
+      }
         
-        .div1{
-            width: 7;
-            float: left;    
-        }
-        .div2{
-            width: 93%;
-            float: right;
-            margin-top: 50;
-        }
-        
+      #imgs{
+        width: 4%;
+      }
+      #welcome{
+        display: flex;
+      }
+      #wel{
+        margin-top: 2%;
+        margin-left: 1px;
+        font-size: 2rem;
+        text-decoration: underline;
+        font-weight: 600;
+        margin-bottom: 2px;
+        color: red;
+      }
+
+      h3{
+        text-decoration: underline;
+      }
+
+      .blue{
+        color: blue;
+        font-weight: bold;
+      }
+
+      ul{
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      ul li{
+        list-style: disc;
+      }
+
+      td{
+        padding-right: 50px;
+        line-height: 25px;
+        padding-left: 50px;
+      }
+
+      table{
+        width: 90%;
+      }
+      
     </style>
 </head>
 <body>
-    <hr>
+<hr>
+<div id="welcome">
+    <div id="imgs">
+    <img src="/img/BB.png" alt="" id="BB">
+    </div>
+    <p id="wel">WELCOME TO XYZ SITE!!!</p>
+    
+</div>
+<hr>
 
-    <div class="div1"><img src="/img/BB.png"></div>
-    <div class="div2"align="left"><h1 >WELCOME TO XYZ SITE!!!</h1></div>
-    <br><br><br><br><br>
-    <hr>
-    <table border="">
-        <tr>
-            <td><h3>UNIVERSITY MARK RULES:</h3>The following rulse been defined
-            <ol>
-                <li>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-            </ol>
-            </td>
-            <td><h3>MARKS ENTRY FORM:</h3></td>
-        </tr>
-        
-    </table>
+<table>
+    <tr>
+        <td><span class="blue"><u>UNIVERSITY MARK RULES:</u></span>
+        <br>
+        <p>The Following rules have</p>
+
+        <ol>
+
+            <li>
+                <u>GRADE.</u>
+                <ul>
+                    <li>Fast class for <span class="blue">60%</span> or above</li>
+                    <li>F D for <span class="blue">70%</span> or above</li>
+                    <li>Second for <span class="blue">48%</span> or above</li>
+                </ul>
+            </li>
+            <li>
+                <u>PASS</u>
+                <ul>
+                    <li>ATKT in maximum <span class="blue">2</span> subjects</li>
+                    <li>minimum <span class="blue">35%</span> marks in ech subject</li>
+                </ul>
+            </li>
+        </ol>
+        </td>
+        <td>
+            <span class="blue"><u>UNIVERSITY MARK RULES:</u></span>
+            <form action="">
+                <label for="Roll number">Roll number
+                    <input type="text" name="Roll number" id="">
+                </label>
+                <br>
+                <label for="class">Class:
+                    <input type="radio" name="class" id="">FYITM
+                    <input type="radio" name="class" id="">SYITM
+                    <input type="radio" name="class" id="">TYITM
+                    <input type="radio" name="class" id="">4YITM
+                </label>
+                <br>
+                <label for="Age">
+                    Age: <input type="text" name="Age" id=""> yrs
+                </label>
+                <br>
+                <label for="ITM01">
+                    ITM01 marks: <input type="text" name="ITM01" id="">
+                </label>
+                <br>
+                <label for="ITM02">
+                    ITM02 marks: <input type="text" name="ITM02" id="">
+                </label>
+                <br>
+                <label for="ITM03">
+                    ITM03 marks: <input type="text" name="ITM03" id="">
+                </label>
+                <br><br>
+                <label for="ATKT">
+                    ATKT in ? subjects: <input type="radio" name="ATKT" id="">Zero
+                    <input type="radio" name="ATKT" id="">one
+                    <input type="radio" name="ATKT" id="">one
+                </label>
+                <br><br>
+                <button>Register My Marks</button>
+            </form>
+        </td>
+    </tr>
+</table>
+<hr>
 </body>
 </html>
